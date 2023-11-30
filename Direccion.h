@@ -15,8 +15,16 @@ private:
 
 public:
     Direccion();
-    string obtenerDireccionCompleta();
-    void modificarDireccion(string calle, string ciudad, string codigoPostal, string estado, string pais);
+    string obtenerCalle();
+    string obtenerCiudad();
+    string obtenerCodigoPostal();
+    string obtenerEstado();
+    string obtenerPais();
+    void modificarCalle(string calle);
+    void modificarCiudad(string ciudad);
+    void modificarCodigoPostal(string codigoPostal);
+    void modificarEstado(string estado);
+    void modificarPais(string pais);
 };
 
 #endif

@@ -18,8 +18,8 @@ public:
     Contacto();
     void agregarNombre(string nombre);
     void agregarEmail(string email);
-    void agregarTelefono(string numero, string tipo, string empresa, string cargo);
-    void agregarDireccion(string calle, string ciudad, string codigoPostal, string estado, string pais);
+    void agregarDatosTelefono(string numero, string tipo, string empresa, string cargo);
+    void agregarDatosDireccion(string calle, string ciudad, string codigoPostal, string estado, string pais);
     string obtenerInformacionContacto();
 };
 

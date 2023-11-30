@@ -51,7 +51,7 @@ int main() {
 
             nuevoContacto.agregarNombre(nombre);
             nuevoContacto.agregarEmail(email);
-            nuevoContacto.agregarDireccion(calle, ciudad, codigoPostal, estado, pais);
+            nuevoContacto.agregarDatosDireccion(calle, ciudad, codigoPostal, estado, pais);
 
             cout << "\nIngrese el número de teléfono del contacto: ";
             getline(cin, numero);
@@ -92,7 +92,7 @@ int main() {
 
             }
 
-            nuevoContacto.agregarTelefono(numero, tipo, empresa, cargo);
+            nuevoContacto.agregarDatosTelefono(numero, tipo, empresa, cargo);
 
             cout << "\n*** INFORMACIÓN DEL CONTACTO AGREGADO ***\n";
             cout << nuevoContacto.obtenerInformacionContacto() << endl;

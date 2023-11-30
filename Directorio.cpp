@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-// Inclusión de los archivos de implementación y de cabecera.
+// Inclusión de los archivos de implementación.
 #include "Contacto.cpp"
 #include "NumeroTelefonoProfesional.cpp"
 #include "NumeroTelefono.cpp"

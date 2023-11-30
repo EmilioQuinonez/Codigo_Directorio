@@ -1,6 +1,6 @@
 #ifndef CONTACTO_H
 #define CONTACTO_H
-
+// La clase Contacto (que tiene composicion con Direccion y NumeroTelefonoProfesional) genera un contacto que incluye nombre, email, direccion y numero de telefono. Todos estos valores los recibe desde el main.
 #include <string>
 #include "Direccion.h" // Incluimos la definición de la clase Direccion porque ocupamos elementos de esta clase.
 #include "NumeroTelefonoProfesional.h" // Incluimos la definición de la clase NumeroTelefonoProfesional porque ocupamos elementos de esta clase.
@@ -25,3 +25,4 @@ public:
 };
 
 #endif
+

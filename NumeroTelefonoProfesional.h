@@ -15,7 +15,10 @@ public:
     NumeroTelefonoProfesional();
     string obtenerEmpresa();
     string obtenerCargo();
-    void asignarNumeroCompleto(string numero, string tipoTelefono, string empresa, string cargo);
+    void asignarEmpresa(string empresa);
+    void asignarCargo(string cargo);
+    void asignarNumero(string numero);
+    void asignarTipo(string tipoTelefono);
 };
 
 #endif

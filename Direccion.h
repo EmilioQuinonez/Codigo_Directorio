@@ -1,6 +1,6 @@
 #ifndef DIRECCION_H
 #define DIRECCION_H
-
+// La clase Direccion (tiene una composicion con Contacto) genera un objeto direccion que incluye valores como la calle, ciudad, codigo postal, estado y pais del contacto. Todos estos valores se envian a contacto.
 #include <string>
 
 using namespace std;

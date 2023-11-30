@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 
+// Inclusión de los archivos de implementación y de cabecera.
 #include "Contacto.cpp"
 #include "NumeroTelefonoProfesional.cpp"
 #include "NumeroTelefono.cpp"
@@ -12,6 +13,7 @@
 
 using namespace std;
 
+// Función que muestra el menú para agregar un contacto.
 void menu() {
     cout << "\n*** ¿Deseas agregar un contacto? ***" << endl;
     cout << "1. Si" << endl;
@@ -19,6 +21,7 @@ void menu() {
 };
 
 int main() {
+    // Bucle que permite al usuario decidir si desea seguir agregando contactos
     bool continua = true;
     while (continua) {
         menu();
@@ -27,9 +30,11 @@ int main() {
         cin >> opcion;
 
         if (opcion == 1) {
+            // Declaración de variables para almacenar los datos del contacto.
             string nombre, email, calle, ciudad, codigoPostal, estado, pais, numero, tipo, empresa, cargo;
-            Contacto nuevoContacto;
+            Contacto nuevoContacto; // Creación de un nuevo objeto de tipo Contacto.
 
+            // Captura de datos del usuario para el nuevo contacto.
             cout << "\nIngrese el nombre completo del contacto: ";
             cin.ignore();
             getline(cin, nombre);
@@ -49,16 +54,19 @@ int main() {
             cout << "País: ";
             getline(cin, pais);
 
+            // Asignación de los datos de nombre, email y dirección al nuevo contacto.
             nuevoContacto.agregarNombre(nombre);
             nuevoContacto.agregarEmail(email);
             nuevoContacto.agregarDatosDireccion(calle, ciudad, codigoPostal, estado, pais);
 
+            // Captura de datos para el número de teléfono del contacto.
             cout << "\nIngrese el número de teléfono del contacto: ";
             getline(cin, numero);
 
             cout << "Ingrese el tipo de número (celular, fijo, etc.): ";
             getline(cin, tipo);
 
+            // Bucle para determinar si el número telefónico es empresarial o no.
             bool continua_1 = true;
             while (continua_1) {
                 int respuesta;
@@ -92,17 +100,21 @@ int main() {
 
             }
 
+            // Asignación de los datos del número de teléfono al nuevo contacto
             nuevoContacto.agregarDatosTelefono(numero, tipo, empresa, cargo);
 
+            // Mostrar la información del contacto agregado
             cout << "\n*** INFORMACIÓN DEL CONTACTO AGREGADO ***\n";
             cout << nuevoContacto.obtenerInformacionContacto() << endl;
         }
 
+        // Se sale del bucle del menú y finaliza el programa
         else if (opcion == 2) {
             cout << "\nNos vemos pronto." << endl;
             continua = false;
         }
 
+        // Manejo del error si la opción elegida no es válida
         else {
             cout << "\nError, selecciona una opción valida." << endl;
         }

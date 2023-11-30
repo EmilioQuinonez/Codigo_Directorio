@@ -12,9 +12,18 @@ string NumeroTelefonoProfesional::obtenerCargo() {
     return cargo;
 }
 
-void NumeroTelefonoProfesional::asignarNumeroCompleto(string numero, string tipoTelefono, string empresa, string cargo) {
+void NumeroTelefonoProfesional::asignarNumero(string numero) {
     NumeroTelefono::modificarNumero(numero);
+}
+
+void NumeroTelefonoProfesional::asignarTipo(string tipoTelefono) {
     NumeroTelefono::modificarTipo(tipoTelefono);
+}
+
+void NumeroTelefonoProfesional::asignarEmpresa(string empresa) {
     this->empresa = empresa;
+}
+
+void NumeroTelefonoProfesional::asignarCargo(string cargo) {
     this->cargo = cargo;
 }

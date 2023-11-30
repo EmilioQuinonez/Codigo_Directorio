@@ -19,3 +19,4 @@ void NumeroTelefono::modificarTipo(string tipo) {
 void NumeroTelefono::modificarNumero(string numero) {
     this->numero = numero;
 }
+

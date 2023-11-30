@@ -4,19 +4,42 @@ using namespace std;
 
 Direccion::Direccion() {}
 
-string Direccion::obtenerDireccionCompleta() {
-    return "\n"
-           "Calle: " + calle + "\n" +
-           "Ciudad: " + ciudad + "\n" +
-           "Código Postal: " + codigoPostal + "\n" +
-           "Estado: " + estado + "\n" +
-           "País: " + pais + "\n";
+string Direccion::obtenerCalle() {
+    return "\nCalle: " + calle + "\n";
 }
 
-void Direccion::modificarDireccion(string calle, string ciudad, string codigoPostal, string estado, string pais) {
+string Direccion::obtenerCiudad() {
+    return "Ciudad: " + ciudad + "\n";
+}
+
+string Direccion::obtenerCodigoPostal() {
+    return "Código Postal: " + codigoPostal + "\n";
+}
+
+string Direccion::obtenerEstado() {
+    return "Estado: " + estado + "\n";
+}
+
+string Direccion::obtenerPais() {
+    return "País: " + pais + "\n";
+}
+
+void Direccion::modificarCalle(string calle) {
     this->calle = calle;
+}
+    
+void Direccion::modificarCiudad(string ciudad) {
     this->ciudad = ciudad;
+}
+
+void Direccion::modificarCodigoPostal(string codigoPostal) {
     this->codigoPostal = codigoPostal;
+}
+    
+void Direccion::modificarEstado(string estado) {
     this->estado = estado;
+}
+
+void Direccion::modificarPais(string pais) {
     this->pais = pais;
 }
